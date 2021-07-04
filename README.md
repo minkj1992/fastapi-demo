@@ -8,8 +8,9 @@ $ pyenv virtualenv fastapi
 $ pyenv activate fastapi
 $ pip install --upgrade pip
 $ pip install fastapi 'uvicorn[standard]'
+$ mkdir project && cd project
 $ cp .env-template .env
-$ uvicorn app.main:app --reload --log-level=debug
+$ uvicorn project.main:app --reload --log-level=debug
 ```
 
 ## unit test
